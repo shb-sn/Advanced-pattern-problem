@@ -17,12 +17,12 @@ int main()
         cout<<endl;
     }
     for (int i=n; i>=1; i--){
-        for (int j=n-i; j>=1; j--){
-            cout<<"  ";
-        }
-        for (int j=2*i-1; j>=1; j--){
-            cout<<"* ";
-        }
+        for (int j=n-i; j>=1; j--){                   // Or you can use -> for (int j=1; j<=n-i; j++){
+            cout<<"  ";                               //                        cout<<"  ";
+        }                                             //                    }
+        for (int j=2*i-1; j>=1; j--){                 //                    for (int j=1; j<=2*i-1; j++){
+            cout<<"* ";                               //                        cout<<"* ";
+        }                                             //                     }
         cout<<endl;
     }
 
